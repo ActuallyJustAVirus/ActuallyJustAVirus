@@ -10,6 +10,7 @@
   < 226
   + 187
   ' 191
+  app 93
 )
 
 (defsrc
@@ -31,6 +32,7 @@
   )
   esc (fork esc @switch (lctl))
   spc (tap-hold-release $tap-time $hold-time spc (layer-while-held nav))
+  < (tap-hold-release $tap-time $hold-time < (layer-while-held function))
 
   a (tap-hold-release $tap-time $hold-time a lmet)
   s (tap-hold-release $tap-time $hold-time s lalt)
@@ -51,12 +53,16 @@
   up (tap-hold-release $tap-time $hold-time up lsft)
   rt (tap-hold-release $tap-time $hold-time right ralt)
   tab (tap-hold-release $tap-time $hold-time tab lmet)
+
+  | (unicode |)
+
+  app (tap-hold-release $tap-time $hold-time app lctl)
 )
 
 (deflayer base
   _ _ _ _ _ _ _ _ _ _ _
   @esc @a @s @d @f _ _ @j @k @l @ae _
-  _ _ _ _ _ _ _ _ _ _ _
+  @< _ _ _ _ _ _ _ _ _ _
   @spc
 )
 
@@ -69,8 +75,15 @@
 
 (deflayer nav
   1 2 3 4 5 6 7 8 9 0 +
-  _ _ @del @bk @ret _ @lt @dw @up @rt @tab _
-  _ _ _ _ _ _ home end _ _ '
+  _ _ @del @bk @ret b @lt @dw @up @rt @tab _
+  @| _ _ _ _ _ home end _ _ '
+  _
+)
+
+(deflayer function
+  f1 f2 f3 f4 f5 f6 f7 f8 f9 f10 f11
+  @esc _ _ _ _ _ _ @app _ _ _ f12
+  _ _ _ _ _ _ _ _ _ _ _
   _
 )
 
