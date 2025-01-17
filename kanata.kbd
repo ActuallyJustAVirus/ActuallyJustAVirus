@@ -13,6 +13,16 @@
   app 93
 )
 
+(deflocalkeys-linux
+  å 26
+  æ 39
+  ø 40
+  < 86
+  + 12
+  ' 43
+  app 127
+)
+
 (defsrc
   q w e r t y u i o p å
   caps a s d f g h j k l æ ø
