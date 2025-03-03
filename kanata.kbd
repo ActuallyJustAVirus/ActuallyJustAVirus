@@ -11,6 +11,8 @@
   + 187
   ' 191
   app 93
+  ´ 219
+  ¨ 186
 )
 
 (deflocalkeys-linux
@@ -86,14 +88,14 @@
 (deflayer nav
   1 2 3 4 5 6 7 8 9 0 +
   _ _ @del @bk @ret b @lt @dw @up @rt @tab _
-  @| _ _ _ _ _ home end _ _ '
+  @| _ _ _ _ _ home end ´ ¨ '
   _
 )
 
 (deflayer function
   f1 f2 f3 f4 f5 f6 f7 f8 f9 f10 f11
   @esc _ _ _ _ _ _ @app _ _ _ f12
-  _ _ _ _ _ _ _ _ _ _ _
+  _ _ _ _ _ _ pgup pgdn _ _ _
   _
 )
 
