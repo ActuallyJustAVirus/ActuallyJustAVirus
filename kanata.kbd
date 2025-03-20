@@ -59,7 +59,7 @@
   l (tap-hold-release $tap-time $hold-time l lalt)
   ae (tap-hold-release $tap-time $hold-time æ lmet)
 
-  del (tap-hold-release $tap-time $hold-time del lalt)
+  del (tap-hold-release $tap-time $hold-time del ralt)
   bk (tap-hold-release $tap-time $hold-time bspc lsft)
   ret (tap-hold-release $tap-time $hold-time ret lctl)
 
