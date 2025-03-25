@@ -11,6 +11,8 @@
   + 187
   ' 191
   app 93
+  play 179
+  next 176
   ´ 219
   ¨ 186
 )
@@ -72,6 +74,8 @@
   | (unicode |)
 
   app (tap-hold-release $tap-time $hold-time app lctl)
+  play (tap-hold-release $tap-time $hold-time play lsft)
+  next (tap-hold-release $tap-time $hold-time next lalt)
 )
 
 (deflayer base
@@ -97,7 +101,7 @@
 
 (deflayer function
   f1 f2 f3 f4 f5 f6 f7 f8 f9 f10 f11
-  @esc _ _ _ _ _ _ @app _ _ _ f12
+  @esc _ _ _ _ _ _ @app @play @next _ f12
   _ _ _ _ _ _ pgup pgdn _ _ _
   _
 )
