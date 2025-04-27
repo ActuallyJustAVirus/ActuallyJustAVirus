@@ -57,7 +57,9 @@
   s (tap-hold-release $tap-time $hold-time s lalt)
   d (tap-hold-release $tap-time $hold-time d lsft)
   f (tap-hold-release $tap-time $hold-time f lctl)
+  g (tap-hold-release $tap-time $hold-time g ralt)
 
+  h (tap-hold-release $tap-time $hold-time h ralt)
   j (tap-hold-release $tap-time $hold-time j lctl)
   k (tap-hold-release $tap-time $hold-time k lsft)
   l (tap-hold-release $tap-time $hold-time l lalt)
@@ -66,11 +68,12 @@
   del (tap-hold-release $tap-time $hold-time del lalt)
   bk (tap-hold-release $tap-time $hold-time bspc lsft)
   ret (tap-hold-release $tap-time $hold-time ret lctl)
+  b (tap-hold-release $tap-time $hold-time b ralt)
 
-  lt (tap-hold-release $tap-time $hold-time left _)
+  lt (tap-hold-release $tap-time $hold-time left ralt)
   dw (tap-hold-release $tap-time $hold-time down lctl)
   up (tap-hold-release $tap-time $hold-time up lsft)
-  rt (tap-hold-release $tap-time $hold-time right ralt)
+  rt (tap-hold-release $tap-time $hold-time right lalt)
   tab (tap-hold-release $tap-time $hold-time tab lmet)
 
   | (unicode |)
@@ -82,7 +85,7 @@
 
 (deflayer base
   _ _ _ _ _ _ _ _ _ _ _
-  esc @a @s @d @f _ _ @j @k @l @ae _
+  esc @a @s @d @f @g @h @j @k @l @ae _
   @< _ _ _ _ _ _ _ _ _ _
   @spc
 )
@@ -96,7 +99,7 @@
 
 (deflayer nav
   1 2 3 4 5 6 7 8 9 0 +
-  @switch _ @del @bk @ret b @lt @dw @up @rt @tab _
+  @switch _ @del @bk @ret @b @lt @dw @up @rt @tab _
   @| _ _ _ _ _ home end ´ ¨ '
   _
 )
